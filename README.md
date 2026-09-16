@@ -6,6 +6,17 @@ SENTINEL-XAI is a research prototype for **hybrid, confidence-aware, and explain
 
 The project combines engineering knowledge, physics-based monitoring, machine learning, supervised diagnosis, confidence-aware decisions, and explainable AI to monitor spacecraft subsystem health.
 
+
+
+---
+
+# 📜 Technical Report
+
+A concise technical report describing the complete project is available at:
+
+```text
+docs/SENTINEL-XAI_Report.pdf
+```
 ---
 
 ## Overview
@@ -536,54 +547,7 @@ python experiments/experiment_054_final_architecture_figures.py
 
 See `REPRODUCIBILITY.md` for the complete experimental sequence.
 
----
 
-# Project Scale
-
-Final repository audit:
-
-```text
-10 / 10 project phases complete
-9 / 9 final validation checks passed
-
-23 source Python files
-56 experiment scripts
-131 result tables
-109 figures
-4 saved models
-12 research reports
-120 Monte Carlo datasets
-```
-
----
-
-# Project Status
-
-| Component | Status |
-|---|---|
-| Spacecraft Simulation | ✅ Complete |
-| Fault Injection | ✅ Complete |
-| Rule-Based Detection | ✅ Complete |
-| Physics-Based Monitoring | ✅ Complete |
-| Unsupervised ML | ✅ Complete |
-| Hybrid Fusion | ✅ Complete |
-| Fault Diagnosis | ✅ Complete |
-| Confidence-Aware Diagnosis | ✅ Complete |
-| Explainable AI | ✅ Complete |
-| Monte Carlo Robustness | ✅ Complete |
-| Research Packaging | ✅ Complete |
-
----
-
-# Technical Report
-
-A concise technical report describing the complete project is available at:
-
-```text
-docs/SENTINEL-XAI_Report.pdf
-```
-
----
 
 # Future Work
 
