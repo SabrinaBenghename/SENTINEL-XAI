@@ -1,0 +1,9 @@
+check,value,criterion,pass
+Nominal false alarms,0.0,== 0,True
+Precision,1.0,>= 0.95,True
+Recall improves over Phase 3,0.6488052136133237,> 0.5634,True
+F1 improves over Phase 3,0.7870004391743521,> 0.7207,True
+Classification improves over Phase 3,0.6408399710354815,> 0.5634,True
+Detection delay improves over Phase 3,16.66666666666667,< 33.7 min,True
+Sensor-drift diagnosis improves,0.425,> 0.3500,True
+All six faults detected,6.0,== 6,True

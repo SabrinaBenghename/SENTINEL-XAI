@@ -1,0 +1,44 @@
+==================================================================================
+SENTINEL-XAI UNCERTAIN DIAGNOSIS EXPLANATION
+==================================================================================
+
+FINAL DECISION: UNCERTAIN
+
+Confidence threshold: 0.70
+
+Candidate 1: Solar-array degradation
+Probability: 62.9%
+
+Candidate 2: Battery degradation
+Probability: 24.8%
+
+Probability margin: 38.0%
+
+Why SENTINEL did not commit:
+The highest class probability did not reach the required 0.70 confidence threshold.
+The system therefore preserves the competing diagnoses rather than forcing a potentially unreliable class label.
+
+----------------------------------------------------------------------------------
+EVIDENCE SUPPORTING CANDIDATE 1 — Solar-array degradation
+----------------------------------------------------------------------------------
+
+1. The measured battery state of charge was 59.8332 %. The classifier used this operating value as evidence for Solar-array degradation (SHAP +0.0452).
+2. The measured battery current was 12.0520 A. The classifier used this operating value as evidence for Solar-array degradation (SHAP +0.0428).
+3. The measured battery voltage was 28.3643 V. The classifier used this operating value as evidence for Solar-array degradation (SHAP +0.0416).
+4. The thermal ML anomaly ratio was 0.926, below the learned anomaly boundary. Its pattern contributed toward Solar-array degradation (SHAP +0.0327).
+5. Solar power w had value 0.0000 and contributed toward Solar-array degradation (SHAP +0.0293).
+
+----------------------------------------------------------------------------------
+EVIDENCE SUPPORTING CANDIDATE 2 — Battery degradation
+----------------------------------------------------------------------------------
+
+1. The battery ML anomaly ratio was 1.001, above the learned anomaly boundary. Its pattern contributed toward Battery degradation (SHAP +0.0278).
+2. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Battery degradation (SHAP +0.0258).
+3. The physics/model detector did not identify Reaction-wheel degradation. The absence of this competing diagnosis supported Battery degradation (SHAP +0.0192).
+4. The measured battery voltage was 28.3643 V. The classifier used this operating value as evidence for Battery degradation (SHAP +0.0188).
+5. The measured battery state of charge was 59.8332 %. The classifier used this operating value as evidence for Battery degradation (SHAP +0.0135).
+
+Interpretation:
+This is a contrastive explanation: it shows why multiple diagnostic hypotheses remain plausible.
+SHAP explains the learned model's decision structure and does not prove physical causality.
+==================================================================================

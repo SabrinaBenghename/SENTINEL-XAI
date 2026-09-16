@@ -1,0 +1,8 @@
+class,precision,recall,f1,support
+nominal,0.88,0.8073394495412844,0.8421052631578947,109
+solar_array_degradation,1.0,1.0,1.0,72
+battery_degradation,0.7532467532467533,0.8055555555555556,0.7785234899328859,72
+thermal_anomaly,0.9473684210526315,1.0,0.972972972972973,72
+reaction_wheel_degradation,1.0,1.0,1.0,72
+battery_voltage_sensor_drift,1.0,1.0,1.0,72
+telemetry_dropout,1.0,1.0,1.0,55

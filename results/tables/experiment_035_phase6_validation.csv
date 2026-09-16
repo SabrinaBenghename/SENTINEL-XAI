@@ -1,0 +1,11 @@
+check,value,criterion,pass
+Healthy hybrid false alarms,0.0,== 0,True
+Hybrid precision,1.0,>= 0.95,True
+Hybrid false-positive rate,0.0,== 0,True
+Recall improves over Phase 4,0.7487328023171614,> 0.6488,True
+F1 improves over Phase 4,0.8563146997929606,> 0.7870,True
+Classification improves over Phase 4,0.7451122375090514,> 0.6408,True
+Diagnosis delay no worse than Phase 4,15.500000000000002,<= 16.7 min,True
+All six fault types diagnosed,6.0,== 6,True
+ML contributes supporting evidence,189.0,> 0 samples,True
+Every fault has nonzero classification recall,0.2208333333333333,> 0,True

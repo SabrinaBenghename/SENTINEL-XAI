@@ -1,0 +1,8 @@
+true_class,uncertain_samples
+nominal,105
+solar_array_degradation,5
+battery_degradation,54
+thermal_anomaly,0
+reaction_wheel_degradation,0
+battery_voltage_sensor_drift,0
+telemetry_dropout,0

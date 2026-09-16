@@ -1,0 +1,11 @@
+check,value,criterion,pass
+Diagnosis dataset has no target leakage,1.0,== 1,True
+Phase 7 accuracy improves over Phase 6,0.933206106870229,> 0.8073,True
+Random Forest accuracy,0.933206106870229,>= 0.90,True
+Balanced accuracy,0.9446992864424058,>= 0.90,True
+Macro F1,0.9419431037233934,>= 0.90,True
+Every class has useful raw recall,0.8055555555555556,>= 0.75,True
+Accepted diagnosis accuracy,1.0,>= 0.99,True
+Confidence layer captures classifier errors,1.0,>= 0.95,True
+Selective diagnosis coverage,0.6870229007633588,>= 0.60,True
+Every class retains accepted diagnoses,1.0,== 1,True

@@ -1,0 +1,44 @@
+==================================================================================
+SENTINEL-XAI UNCERTAIN DIAGNOSIS EXPLANATION
+==================================================================================
+
+FINAL DECISION: UNCERTAIN
+
+Confidence threshold: 0.70
+
+Candidate 1: Battery degradation
+Probability: 39.2%
+
+Candidate 2: Nominal spacecraft operation
+Probability: 39.0%
+
+Probability margin: 0.3%
+
+Why SENTINEL did not commit:
+The highest class probability did not reach the required 0.70 confidence threshold.
+The system therefore preserves the competing diagnoses rather than forcing a potentially unreliable class label.
+
+----------------------------------------------------------------------------------
+EVIDENCE SUPPORTING CANDIDATE 1 — Battery degradation
+----------------------------------------------------------------------------------
+
+1. The battery EKF voltage innovation was -0.0786 V. This model mismatch contributed toward Battery degradation (SHAP +0.0740).
+2. The measured battery temperature was 25.2878 °C. The classifier used this operating value as evidence for Battery degradation (SHAP +0.0425).
+3. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Battery degradation (SHAP +0.0284).
+4. The physics/model detector did not identify Reaction-wheel degradation. The absence of this competing diagnosis supported Battery degradation (SHAP +0.0209).
+5. The measured electronics temperature was 25.8916 °C. The classifier used this operating value as evidence for Battery degradation (SHAP +0.0183).
+
+----------------------------------------------------------------------------------
+EVIDENCE SUPPORTING CANDIDATE 2 — Nominal spacecraft operation
+----------------------------------------------------------------------------------
+
+1. The battery ML anomaly ratio was 0.816, below the learned anomaly boundary. Its pattern contributed toward Nominal spacecraft operation (SHAP +0.0271).
+2. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Nominal spacecraft operation (SHAP +0.0262).
+3. Physics/model confidence was 1.000; this evidence pushed the classifier toward Nominal spacecraft operation (SHAP +0.0249).
+4. The rule-based detector remained nominal; this contributed toward Nominal spacecraft operation (SHAP +0.0241).
+5. The physics/model detector remained nominal; this contributed toward Nominal spacecraft operation (SHAP +0.0214).
+
+Interpretation:
+This is a contrastive explanation: it shows why multiple diagnostic hypotheses remain plausible.
+SHAP explains the learned model's decision structure and does not prove physical causality.
+==================================================================================

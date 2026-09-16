@@ -1,0 +1,33 @@
+==============================================================================
+SENTINEL-XAI ENGINEERING EXPLANATION
+==============================================================================
+
+Diagnosis: Battery degradation
+Machine label: battery_degradation
+Confidence: 0.9238
+Decision status: ACCEPTED
+Representative mission time: 5.633 h
+
+Primary model evidence:
+
+1. Physics/model confidence was 0.850; this evidence pushed the classifier toward Battery degradation (SHAP +0.1127).
+2. The physics/model detector independently identified Battery degradation. This agreement pushed the learned classifier toward the same diagnosis (SHAP +0.0699).
+3. The measured battery temperature was 25.0908 °C. The classifier used this operating value as evidence for Battery degradation (SHAP +0.0689).
+4. The battery EKF voltage innovation was -0.0785 V. This model mismatch contributed toward Battery degradation (SHAP +0.0572).
+5. The physics/model detector did not identify Reaction-wheel degradation. The absence of this competing diagnosis supported Battery degradation (SHAP +0.0521).
+6. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Battery degradation (SHAP +0.0404).
+7. The physics/model detector reported an active model-based fault; this contributed toward Battery degradation (SHAP +0.0384).
+
+Evidence-source composition:
+
+  rules         : 13.4%
+  physics       : 57.3%
+  ml            : 6.0%
+  telemetry     : 18.8%
+  missing_data  : 4.5%
+
+Interpretation note:
+SHAP describes how the learned diagnostic model used the available evidence. It does not establish physical causality.
+
+Binary rule/physics features are interpreted using their actual 0/1 value, so absence of a competing diagnosis is not incorrectly reported as an active detector alarm.
+==============================================================================

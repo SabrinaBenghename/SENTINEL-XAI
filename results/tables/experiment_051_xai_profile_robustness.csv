@@ -1,0 +1,3 @@
+profile,scenarios,mean_consensus_overlap,mean_top5_probability_drop,shap_beats_random_fraction
+abrupt,37,0.8378378378378378,0.6324960281021808,1.0
+gradual,83,0.8409638554216867,0.6295691625638729,1.0

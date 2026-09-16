@@ -1,0 +1,4 @@
+evaluation_true_class,test_position,time_h,candidate_1,candidate_1_probability,candidate_2,candidate_2_probability,probability_margin,report_file
+nominal,70,5.366666666666666,nominal,0.3961661977766193,battery_degradation,0.3948786523476956,0.001287545428923731,C:\Users\B.PC\Documents\SENTINEL-XAI\results\reports\experiment_044_uncertain_nominal.txt
+solar_array_degradation,178,5.966666666666667,solar_array_degradation,0.6285564417587244,battery_degradation,0.24845943172322332,0.38009701003550106,C:\Users\B.PC\Documents\SENTINEL-XAI\results\reports\experiment_044_uncertain_solar_array_degradation.txt
+battery_degradation,227,5.583333333333333,battery_degradation,0.3924984559638141,nominal,0.38963319416030884,0.00286526180350527,C:\Users\B.PC\Documents\SENTINEL-XAI\results\reports\experiment_044_uncertain_battery_degradation.txt

@@ -1,0 +1,8 @@
+class,samples,mean_pairwise_top5_jaccard,mean_consensus_top5_overlap,modal_top1_feature,modal_top1_fraction
+nominal,4,0.41865079365079366,0.6458333333333333,battery_innovation_v,0.25
+solar_array_degradation,67,0.4987454502379875,0.6067282634446812,solar_relative_residual,0.5671641791044776
+battery_degradation,18,0.3991337275651001,0.5319664902998236,battery_innovation_v,0.3333333333333333
+thermal_anomaly,72,1.0,1.0,electronics_temp_residual_c,1.0
+reaction_wheel_degradation,72,0.7750391236306731,0.7870370370370371,physics_pred_reaction_wheel_degradation,1.0
+battery_voltage_sensor_drift,72,0.6540725836500485,0.7037037037037037,rule_pred_battery_voltage_sensor_drift,1.0
+telemetry_dropout,55,1.0,1.0,physics_pred_telemetry_dropout,1.0

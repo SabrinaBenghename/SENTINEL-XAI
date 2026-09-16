@@ -1,0 +1,33 @@
+==============================================================================
+SENTINEL-XAI ENGINEERING EXPLANATION
+==============================================================================
+
+Diagnosis: Nominal spacecraft operation
+Machine label: nominal
+Confidence: 0.7410
+Decision status: ACCEPTED
+Representative mission time: 5.633 h
+
+Primary model evidence:
+
+1. The measured battery temperature was 25.0582 °C. The classifier used this operating value as evidence for Nominal spacecraft operation (SHAP +0.0602).
+2. The battery ML anomaly ratio was 0.788, below the learned anomaly boundary. Its pattern contributed toward Nominal spacecraft operation (SHAP +0.0371).
+3. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Nominal spacecraft operation (SHAP +0.0349).
+4. Physics/model confidence was 1.000; this evidence pushed the classifier toward Nominal spacecraft operation (SHAP +0.0321).
+5. The measured battery state of charge was 93.1581 %. The classifier used this operating value as evidence for Nominal spacecraft operation (SHAP +0.0315).
+6. The measured battery voltage was 29.7193 V. The classifier used this operating value as evidence for Nominal spacecraft operation (SHAP +0.0309).
+7. The rule-based detector remained nominal; this contributed toward Nominal spacecraft operation (SHAP +0.0309).
+
+Evidence-source composition:
+
+  rules         : 16.8%
+  physics       : 33.7%
+  ml            : 12.2%
+  telemetry     : 32.8%
+  missing_data  : 4.5%
+
+Interpretation note:
+SHAP describes how the learned diagnostic model used the available evidence. It does not establish physical causality.
+
+Binary rule/physics features are interpreted using their actual 0/1 value, so absence of a competing diagnosis is not incorrectly reported as an active detector alarm.
+==============================================================================

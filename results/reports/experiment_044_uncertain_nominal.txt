@@ -1,0 +1,44 @@
+==================================================================================
+SENTINEL-XAI UNCERTAIN DIAGNOSIS EXPLANATION
+==================================================================================
+
+FINAL DECISION: UNCERTAIN
+
+Confidence threshold: 0.70
+
+Candidate 1: Nominal spacecraft operation
+Probability: 39.6%
+
+Candidate 2: Battery degradation
+Probability: 39.5%
+
+Probability margin: 0.1%
+
+Why SENTINEL did not commit:
+The highest class probability did not reach the required 0.70 confidence threshold.
+The system therefore preserves the competing diagnoses rather than forcing a potentially unreliable class label.
+
+----------------------------------------------------------------------------------
+EVIDENCE SUPPORTING CANDIDATE 1 — Nominal spacecraft operation
+----------------------------------------------------------------------------------
+
+1. The battery EKF voltage innovation was -0.0289 V. This model mismatch contributed toward Nominal spacecraft operation (SHAP +0.0255).
+2. The rule-based detector remained nominal; this contributed toward Nominal spacecraft operation (SHAP +0.0251).
+3. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Nominal spacecraft operation (SHAP +0.0244).
+4. Physics/model confidence was 1.000; this evidence pushed the classifier toward Nominal spacecraft operation (SHAP +0.0230).
+5. Rule-based confidence was 1.000; this evidence pushed the classifier toward Nominal spacecraft operation (SHAP +0.0205).
+
+----------------------------------------------------------------------------------
+EVIDENCE SUPPORTING CANDIDATE 2 — Battery degradation
+----------------------------------------------------------------------------------
+
+1. The measured reaction-wheel temperature was 22.5150 °C. The classifier used this operating value as evidence for Battery degradation (SHAP +0.0310).
+2. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Battery degradation (SHAP +0.0301).
+3. The measured electronics temperature was 26.0241 °C. The classifier used this operating value as evidence for Battery degradation (SHAP +0.0237).
+4. The thermal ML anomaly ratio was 0.723, below the learned anomaly boundary. Its pattern contributed toward Battery degradation (SHAP +0.0222).
+5. The physics/model detector did not identify Reaction-wheel degradation. The absence of this competing diagnosis supported Battery degradation (SHAP +0.0216).
+
+Interpretation:
+This is a contrastive explanation: it shows why multiple diagnostic hypotheses remain plausible.
+SHAP explains the learned model's decision structure and does not prove physical causality.
+==================================================================================

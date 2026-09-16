@@ -1,0 +1,158 @@
+SENTINEL-XAI
+FINAL RESEARCH RESULTS SUMMARY
+============================================================
+
+Research problem
+------------------------------------------------------------
+Evaluate whether a hybrid combination of rule-based reasoning,
+physics/model-based residual monitoring, machine-learning
+evidence, supervised diagnosis and explainable AI can improve
+spacecraft health monitoring while retaining interpretable
+decisions.
+
+MAIN DEVELOPMENT RESULTS
+------------------------------------------------------------
+
+Rule-based detector:
+  Precision: 1.0000
+  Recall:    0.5634
+  F1:        0.7207
+  Delay:     33.7 min
+
+Model-based detector:
+  Precision: 1.0000
+  Recall:    0.6488
+  F1:        0.7870
+  Delay:     16.7 min
+
+Unsupervised ML baseline:
+  Precision: 0.9174
+  Recall:    0.1448
+  F1:        0.2502
+
+Hybrid detector:
+  Precision: 1.0000
+  Recall:    0.7487
+  F1:        0.8563
+  Delay:     15.5 min
+
+The hybrid architecture therefore improved detection recall and
+F1 over the standalone rule and model-based baselines.
+
+FAULT DIAGNOSIS
+------------------------------------------------------------
+
+Development diagnosis accuracy: 0.9332
+Development balanced accuracy: 0.9447
+Development Macro F1: 0.9419
+
+The supervised diagnosis stage substantially improved fault-type
+identification over the direct Phase-6 hybrid classification.
+
+EXPLAINABILITY
+------------------------------------------------------------
+
+Development SHAP top-5 probability drop: 0.7026
+Development random-5 probability drop: 0.0145
+
+This supports explanation faithfulness: removing features identified
+as important by SHAP damaged model confidence far more than removing
+random features.
+
+INDEPENDENT MONTE CARLO EVALUATION
+------------------------------------------------------------
+
+Scenarios: 120
+Retraining: NO
+Threshold retuning: NO
+
+Hybrid precision: 0.9970
+Hybrid recall: 0.7100
+Hybrid F1: 0.8294
+
+Diagnosis accuracy: 0.8527
+Diagnosis Macro F1: 0.9003
+
+Confidence coverage: 0.7371
+Accepted accuracy: 0.9783
+Error-capture rate: 0.8913
+
+Scenario success rate: 1.0000
+Mean correct diagnosis delay:
+  19.45 min
+
+Monte Carlo SHAP top-5 probability drop:
+  0.6305
+
+Monte Carlo random-5 probability drop:
+  0.0148
+
+Monte Carlo explanation consensus:
+  0.8400
+
+Phase-8 to Phase-9 top-5 explanation overlap:
+  0.7333
+
+
+KEY FINDING
+------------------------------------------------------------
+
+The central result is not that one machine-learning model dominates.
+
+The strongest performance was obtained by combining complementary
+forms of evidence:
+
+  telemetry
+      -> rules
+      -> physics/model residuals
+      -> unsupervised ML evidence
+      -> hybrid detection
+      -> supervised diagnosis
+      -> confidence gating
+      -> explainable diagnosis
+
+The independent Monte Carlo experiments support that this architecture
+retains useful detection, diagnosis and explanation behavior under
+randomized fault severity, onset time, fault profile and sensor noise.
+
+
+DOCUMENTED LIMITATION
+------------------------------------------------------------
+
+The frozen 0.70 confidence threshold did not fully reproduce the
+original Phase-7 selective-diagnosis targets on unseen Monte Carlo
+conditions.
+
+Independent performance:
+
+  Accepted accuracy: 0.9783
+  Original target:   >= 0.9900
+
+  Error-capture rate: 0.8913
+  Original target:    >= 0.9500
+
+  Coverage:           0.7371
+  Original target:    >= 0.6000
+
+The independent test set was not used to retune the threshold.
+
+Battery degradation was also the most difficult diagnostic class
+under varying operating conditions.
+
+
+FINAL RESEARCH CONCLUSION
+------------------------------------------------------------
+
+SENTINEL-XAI demonstrates a prototype architecture for hybrid,
+confidence-aware and explainable spacecraft fault detection and
+diagnosis.
+
+The experiments support the hypothesis that combining rules,
+physics/model residuals and machine-learning evidence can provide
+stronger fault-monitoring performance than the individual methods
+used alone, while a supervised diagnosis layer and SHAP-based
+explanation system provide interpretable fault identification.
+
+The results apply to the simulated spacecraft and fault scenarios
+used in this project and should not be interpreted as flight
+qualification or universal spacecraft performance.

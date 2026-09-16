@@ -1,0 +1,3 @@
+evaluation,top5_probability_drop,random5_probability_drop,mean_pairwise_jaccard,consensus_overlap
+Phase 8 Development,0.7026,0.0145,0.6779,0.7536
+Phase 9 Independent Monte Carlo,0.6305,0.0148,0.6876,0.84

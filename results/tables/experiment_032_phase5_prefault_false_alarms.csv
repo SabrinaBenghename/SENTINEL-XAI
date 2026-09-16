@@ -1,0 +1,7 @@
+fault_type,prefault_samples,persistent_false_alarms,prefault_false_alarm_rate
+solar_array_degradation,120,3,0.025
+battery_degradation,120,3,0.025
+thermal_anomaly,120,3,0.025
+reaction_wheel_degradation,120,3,0.025
+battery_voltage_sensor_drift,120,3,0.025
+telemetry_dropout,180,3,0.016666666666666666

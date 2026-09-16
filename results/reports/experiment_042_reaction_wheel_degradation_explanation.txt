@@ -1,0 +1,33 @@
+==============================================================================
+SENTINEL-XAI ENGINEERING EXPLANATION
+==============================================================================
+
+Diagnosis: Reaction-wheel degradation
+Machine label: reaction_wheel_degradation
+Confidence: 1.0000
+Decision status: ACCEPTED
+Representative mission time: 5.033 h
+
+Primary model evidence:
+
+1. The physics/model detector independently identified Reaction-wheel degradation. This agreement pushed the learned classifier toward the same diagnosis (SHAP +0.2301).
+2. Physics/model confidence was 0.900; this evidence pushed the classifier toward Reaction-wheel degradation (SHAP +0.1138).
+3. The reaction-wheel current residual was +0.0549 A. This model mismatch contributed toward Reaction-wheel degradation (SHAP +0.0998).
+4. The reaction-wheel temperature residual was +0.4451 °C. This model mismatch contributed toward Reaction-wheel degradation (SHAP +0.0768).
+5. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Reaction-wheel degradation (SHAP +0.0376).
+6. The physics/model detector reported an active model-based fault; this contributed toward Reaction-wheel degradation (SHAP +0.0259).
+7. The measured reaction-wheel current was 0.2859 A. The classifier used this operating value as evidence for Reaction-wheel degradation (SHAP +0.0241).
+
+Evidence-source composition:
+
+  rules         : 9.2%
+  physics       : 71.8%
+  ml            : 5.5%
+  telemetry     : 8.3%
+  missing_data  : 5.1%
+
+Interpretation note:
+SHAP describes how the learned diagnostic model used the available evidence. It does not establish physical causality.
+
+Binary rule/physics features are interpreted using their actual 0/1 value, so absence of a competing diagnosis is not incorrectly reported as an active detector alarm.
+==============================================================================

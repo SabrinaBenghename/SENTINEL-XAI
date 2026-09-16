@@ -1,0 +1,11 @@
+check,value,criterion,pass
+SHAP reconstruction fidelity,7.771561172376097e-16,< 1e-5,True
+All seven engineering explanations valid,1.0,== 1,True
+Evidence-source fractions normalized,0.9999999999999997,all rows sum to 1,True
+All seven classes have stability profiles,7.0,== 7,True
+SHAP top-5 ablation exceeds random ablation,0.6881051620831746,> 0,True
+SHAP evidence beats random on majority,0.9972222222222222,> 0.50,True
+SHAP ablation flips more predictions than random,0.8083333333333333,> 0,True
+Confidence gate internally consistent,1.0,== 1,True
+Every uncertain class has contrastive XAI,1.0,== 1.0,True
+Accepted diagnoses have larger ambiguity margin,0.6553684144863667,> 0,True

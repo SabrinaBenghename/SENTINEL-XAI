@@ -1,0 +1,7 @@
+fault_type,fault_samples,raw_recall,persistent_recall
+solar_array_degradation,240,0.325,0.075
+battery_degradation,240,0.20416666666666666,0.0125
+thermal_anomaly,240,0.0375,0.0
+reaction_wheel_degradation,240,0.0375,0.0
+battery_voltage_sensor_drift,240,0.04583333333333333,0.0
+telemetry_dropout,181,1.0,0.988950276243094

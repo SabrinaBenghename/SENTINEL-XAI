@@ -1,0 +1,33 @@
+==============================================================================
+SENTINEL-XAI ENGINEERING EXPLANATION
+==============================================================================
+
+Diagnosis: Solar-array degradation
+Machine label: solar_array_degradation
+Confidence: 1.0000
+Decision status: ACCEPTED
+Representative mission time: 5.167 h
+
+Primary model evidence:
+
+1. The solar-power model residual was -0.3000. This model mismatch contributed toward Solar-array degradation (SHAP +0.1578).
+2. The rule-based detector independently identified Solar-array degradation. This agreement pushed the learned classifier toward the same diagnosis (SHAP +0.0827).
+3. The physics/model detector independently identified Solar-array degradation. This agreement pushed the learned classifier toward the same diagnosis (SHAP +0.0773).
+4. The measured battery temperature was 23.9698 °C. The classifier used this operating value as evidence for Solar-array degradation (SHAP +0.0634).
+5. Rule-based confidence was 0.950; this evidence pushed the classifier toward Solar-array degradation (SHAP +0.0389).
+6. The power ML anomaly ratio was 0.963, below the learned anomaly boundary. Its pattern contributed toward Solar-array degradation (SHAP +0.0372).
+7. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Solar-array degradation (SHAP +0.0364).
+
+Evidence-source composition:
+
+  rules         : 21.8%
+  physics       : 43.4%
+  ml            : 9.2%
+  telemetry     : 20.6%
+  missing_data  : 4.9%
+
+Interpretation note:
+SHAP describes how the learned diagnostic model used the available evidence. It does not establish physical causality.
+
+Binary rule/physics features are interpreted using their actual 0/1 value, so absence of a competing diagnosis is not incorrectly reported as an active detector alarm.
+==============================================================================

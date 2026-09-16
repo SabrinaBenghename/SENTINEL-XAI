@@ -1,0 +1,33 @@
+==============================================================================
+SENTINEL-XAI ENGINEERING EXPLANATION
+==============================================================================
+
+Diagnosis: Telemetry dropout
+Machine label: telemetry_dropout
+Confidence: 1.0000
+Decision status: ACCEPTED
+Representative mission time: 5.100 h
+
+Primary model evidence:
+
+1. The physics/model detector independently identified Telemetry dropout. This agreement pushed the learned classifier toward the same diagnosis (SHAP +0.0765).
+2. The thermal ML anomaly ratio was 1.250, above the learned anomaly boundary. Its pattern contributed toward Telemetry dropout (SHAP +0.0708).
+3. Measured battery current was missing; this contributed toward Telemetry dropout (SHAP +0.0585).
+4. Measured battery voltage was missing; this contributed toward Telemetry dropout (SHAP +0.0579).
+5. Measured electronics temperature was missing; this contributed toward Telemetry dropout (SHAP +0.0566).
+6. The power ML anomaly ratio was 1.250, above the learned anomaly boundary. Its pattern contributed toward Telemetry dropout (SHAP +0.0563).
+7. Measured battery temperature was missing; this contributed toward Telemetry dropout (SHAP +0.0548).
+
+Evidence-source composition:
+
+  rules         : 5.0%
+  physics       : 9.6%
+  ml            : 32.0%
+  telemetry     : 0.2%
+  missing_data  : 53.2%
+
+Interpretation note:
+SHAP describes how the learned diagnostic model used the available evidence. It does not establish physical causality.
+
+Binary rule/physics features are interpreted using their actual 0/1 value, so absence of a competing diagnosis is not incorrectly reported as an active detector alarm.
+==============================================================================

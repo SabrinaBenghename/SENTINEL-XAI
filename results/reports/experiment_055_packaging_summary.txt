@@ -1,0 +1,19 @@
+SENTINEL-XAI - EXPERIMENT 055
+RESEARCH PACKAGING SUMMARY
+
+Python: 3.14.3
+Platform: Windows-11-10.0.26200-SP0
+
+Files checked: 36
+Files present: 36
+Files missing: 0
+
+Package versions:
+numpy: 2.4.2
+pandas: 3.0.1
+matplotlib: 3.10.8
+scikit-learn: 1.8.0
+joblib: 1.5.3
+shap: 0.52.0
+
+RESULT: ALL IMPORTANT FILES FOUND

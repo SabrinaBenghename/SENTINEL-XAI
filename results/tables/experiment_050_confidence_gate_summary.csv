@@ -1,0 +1,2 @@
+threshold,samples,raw_accuracy,accepted_samples,uncertain_samples,coverage,accepted_accuracy,accepted_errors,total_classifier_errors,errors_rejected,error_capture_rate,correct_retention_rate,uncertain_accuracy,mean_confidence_correct,mean_confidence_wrong,maximum_error_confidence
+0.7,25221,0.8527021133182665,18591,6630,0.7371238253836089,0.9782690549190468,404,3715,3311,0.8912516823687753,0.8456709755417093,0.5006033182503771,0.8761507920340067,0.5121050396779647,0.9897041673645964

@@ -1,0 +1,8 @@
+class,samples,accepted,uncertain,coverage,accepted_accuracy
+nominal,109,4,105,0.03669724770642202,1.0
+solar_array_degradation,72,67,5,0.9305555555555556,1.0
+battery_degradation,72,18,54,0.25,1.0
+thermal_anomaly,72,72,0,1.0,1.0
+reaction_wheel_degradation,72,72,0,1.0,1.0
+battery_voltage_sensor_drift,72,72,0,1.0,1.0
+telemetry_dropout,55,55,0,1.0,1.0

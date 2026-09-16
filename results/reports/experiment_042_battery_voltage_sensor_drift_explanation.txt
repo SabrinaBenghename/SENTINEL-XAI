@@ -1,0 +1,33 @@
+==============================================================================
+SENTINEL-XAI ENGINEERING EXPLANATION
+==============================================================================
+
+Diagnosis: Battery-voltage sensor drift
+Machine label: battery_voltage_sensor_drift
+Confidence: 0.9944
+Decision status: ACCEPTED
+Representative mission time: 4.833 h
+
+Primary model evidence:
+
+1. The rule-based detector independently identified Battery-voltage sensor drift. This agreement pushed the learned classifier toward the same diagnosis (SHAP +0.3268).
+2. Rule-based confidence was 0.900; this evidence pushed the classifier toward Battery-voltage sensor drift (SHAP +0.1329).
+3. The rule-based detector reported an active fault; this contributed toward Battery-voltage sensor drift (SHAP +0.0979).
+4. The physics/model detector did not identify Reaction-wheel degradation. The absence of this competing diagnosis supported Battery-voltage sensor drift (SHAP +0.0230).
+5. The measured battery temperature was 25.1601 °C. The classifier used this operating value as evidence for Battery-voltage sensor drift (SHAP +0.0203).
+6. The measured electronics temperature was 25.6686 °C. The classifier used this operating value as evidence for Battery-voltage sensor drift (SHAP +0.0155).
+7. The electronics thermal residual was -0.2383 °C. This model mismatch contributed toward Battery-voltage sensor drift (SHAP +0.0155).
+
+Evidence-source composition:
+
+  rules         : 67.5%
+  physics       : 15.1%
+  ml            : 4.0%
+  telemetry     : 8.7%
+  missing_data  : 4.7%
+
+Interpretation note:
+SHAP describes how the learned diagnostic model used the available evidence. It does not establish physical causality.
+
+Binary rule/physics features are interpreted using their actual 0/1 value, so absence of a competing diagnosis is not incorrectly reported as an active detector alarm.
+==============================================================================

@@ -1,0 +1,33 @@
+==============================================================================
+SENTINEL-XAI ENGINEERING EXPLANATION
+==============================================================================
+
+Diagnosis: Thermal anomaly
+Machine label: thermal_anomaly
+Confidence: 1.0000
+Decision status: ACCEPTED
+Representative mission time: 4.817 h
+
+Primary model evidence:
+
+1. The electronics thermal residual was +4.6072 °C. This model mismatch contributed toward Thermal anomaly (SHAP +0.1834).
+2. The battery thermal residual was +4.5555 °C. This model mismatch contributed toward Thermal anomaly (SHAP +0.1500).
+3. The physics/model detector independently identified Thermal anomaly. This agreement pushed the learned classifier toward the same diagnosis (SHAP +0.1267).
+4. The measured electronics temperature was 30.5081 °C. The classifier used this operating value as evidence for Thermal anomaly (SHAP +0.1070).
+5. The measured battery temperature was 29.7075 °C. The classifier used this operating value as evidence for Thermal anomaly (SHAP +0.0935).
+6. The rule-based detector did not identify Battery-voltage sensor drift. The absence of this competing diagnosis supported Thermal anomaly (SHAP +0.0268).
+7. The physics/model detector did not identify Reaction-wheel degradation. The absence of this competing diagnosis supported Thermal anomaly (SHAP +0.0166).
+
+Evidence-source composition:
+
+  rules         : 5.9%
+  physics       : 61.8%
+  ml            : 3.5%
+  telemetry     : 24.0%
+  missing_data  : 4.9%
+
+Interpretation note:
+SHAP describes how the learned diagnostic model used the available evidence. It does not establish physical causality.
+
+Binary rule/physics features are interpreted using their actual 0/1 value, so absence of a competing diagnosis is not incorrectly reported as an active detector alarm.
+==============================================================================

@@ -1,0 +1,7 @@
+experiment,fault,main_metric,metric_label,secondary_metric,secondary_label,pass
+006,solar_array_degradation,30.00000000000002,solar reduction [%],23.081667610875527,final SOC drop [points],True
+007,battery_degradation,9.303756756223265,final SOC drop [points],0.0,max solar diff [W],True
+008,thermal_anomaly,3.555254205829776,battery temp rise [C],3.6699409239653455,electronics temp rise [C],True
+009,reaction_wheel_degradation,0.020453490645159084,wheel current increase [A],0.37452185400765003,wheel temp rise [C],True
+010,battery_voltage_sensor_drift,0.2972839405885271,mean drift residual [V],0.3,expected bias [V],True
+011,telemetry_dropout,1448.0,missing after fault,8.0,max missing/sample,True

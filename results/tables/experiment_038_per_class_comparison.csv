@@ -1,0 +1,8 @@
+class,samples,phase6_recall,phase7_recall,improvement
+nominal,109,1.0,0.8073394495412844,-0.19266055045871555
+solar_array_degradation,72,0.5277777777777778,1.0,0.4722222222222222
+battery_degradation,72,0.06944444444444445,0.8055555555555556,0.7361111111111112
+thermal_anomaly,72,1.0,1.0,0.0
+reaction_wheel_degradation,72,1.0,1.0,0.0
+battery_voltage_sensor_drift,72,1.0,1.0,0.0
+telemetry_dropout,55,1.0,1.0,0.0

@@ -1,0 +1,17 @@
+category,check,pass
+Experimental integrity,120 Monte Carlo scenarios generated,True
+Experimental integrity,No generation failures,True
+Experimental integrity,Six fault classes represented,True
+Experimental integrity,Exactly 20 scenarios per fault,True
+Experimental integrity,All 120 scenarios evaluated,True
+Detection / diagnosis generalization,Hybrid F1 exceeds rule-based F1,True
+Detection / diagnosis generalization,Hybrid F1 exceeds physics-only F1,True
+Detection / diagnosis generalization,All scenarios receive a correct accepted diagnosis,True
+Detection / diagnosis generalization,Independent raw diagnosis Macro F1,True
+Confidence-gate transfer,Selective coverage,True
+Confidence-gate transfer,Accepted diagnosis accuracy,False
+Confidence-gate transfer,Classifier error capture,False
+XAI robustness,All 120 Monte Carlo scenarios explained,True
+XAI robustness,SHAP reconstruction fidelity,True
+XAI robustness,SHAP evidence damages prediction more than random,True
+XAI robustness,SHAP beats random on majority of scenarios,True

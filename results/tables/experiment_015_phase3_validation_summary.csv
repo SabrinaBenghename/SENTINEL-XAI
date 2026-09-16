@@ -1,0 +1,19 @@
+check,value,criterion,pass
+Predictions file loaded,1.0,file exists,True
+Per-fault metrics file loaded,1.0,file exists,True
+Delay file loaded,1.0,file exists,True
+Nominal false alarms,0.0,== 0,True
+Global precision,1.0,>= 0.95,True
+Global recall,0.5633598841419262,>= 0.50,True
+Global F1 score,0.7207040296433534,>= 0.70,True
+False-positive rate,0.0,<= 0.05,True
+Fault classification accuracy,0.5633598841419262,>= 0.50,True
+Solar classification recall,0.5083333333333333,>= 0.50,True
+Battery classification recall,0.0791666666666666,>= 0.05,True
+Thermal classification recall,0.625,>= 0.60,True
+Wheel classification recall,0.3166666666666666,>= 0.30,True
+Sensor-drift classification recall,0.9583333333333334,>= 0.95,True
+Telemetry-dropout classification recall,1.0,== 1.00,True
+All fault types detected at least once,6.0,== 6,True
+Detection delays are nonnegative,1.0,True,True
+Mean detected delay [min],33.666666666666664,<= 40,True

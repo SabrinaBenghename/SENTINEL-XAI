@@ -1,0 +1,13 @@
+metric,value
+Mean SHAP reconstruction error,5.075305255429287e-16
+Maximum SHAP reconstruction error,7.771561172376097e-16
+Mean top-5 SHAP probability drop,0.7026437662240137
+Mean random-5 probability drop,0.014538604140839118
+Top-5 SHAP win fraction,0.9972222222222222
+Top-5 SHAP prediction flip rate,0.8083333333333333
+Random-5 prediction flip rate,0.0
+Mean pairwise explanation stability,0.6779488112478004
+Mean consensus explanation overlap,0.7536098325455113
+Minimum class consensus overlap,0.5319664902998236
+Accepted mean probability margin,0.8584172631745209
+Uncertain mean probability margin,0.20304884868815418

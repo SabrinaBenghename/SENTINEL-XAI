@@ -1,0 +1,7 @@
+fault_type,nominal,solar_array_degradation,battery_degradation,thermal_anomaly,reaction_wheel_degradation,battery_voltage_sensor_drift,telemetry_dropout
+solar_array_degradation,1970,2410,0,0,2,6,0
+battery_degradation,2852,0,616,0,0,703,0
+thermal_anomaly,474,0,0,3594,1,5,0
+reaction_wheel_degradation,1201,0,0,0,3135,3,0
+battery_voltage_sensor_drift,817,0,12,0,1,3402,0
+telemetry_dropout,0,0,0,0,0,0,4017

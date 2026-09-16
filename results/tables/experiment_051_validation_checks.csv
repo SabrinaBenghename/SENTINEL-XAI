@@ -1,0 +1,8 @@
+check,pass
+All 120 independent scenarios explained,True
+All six fault classes represented,True
+Exactly 20 explanations per fault,True
+SHAP reconstruction fidelity,True
+SHAP top-5 damages diagnosis more than random,True
+SHAP beats random for majority of scenarios,True
+Frozen 0.70 accepted operational decisions used,True

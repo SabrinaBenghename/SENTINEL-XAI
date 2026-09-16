@@ -1,0 +1,7 @@
+fault_type,fault_start_h,first_detection_h,detection_delay_h,detection_delay_min,detected
+solar_array_degradation,2.0,2.283333333333333,0.2833333333333332,16.999999999999993,True
+battery_degradation,2.0,3.0,1.0,60.0,True
+thermal_anomaly,2.0,3.45,1.4500000000000002,87.00000000000001,True
+reaction_wheel_degradation,2.0,2.466666666666667,0.4666666666666668,28.000000000000007,True
+battery_voltage_sensor_drift,2.0,2.1666666666666665,0.16666666666666652,9.999999999999991,True
+telemetry_dropout,3.0,3.0,0.0,0.0,True

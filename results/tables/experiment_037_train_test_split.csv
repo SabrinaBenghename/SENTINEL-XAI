@@ -1,0 +1,8 @@
+class,train_samples,test_samples
+nominal,252,109
+solar_array_degradation,168,72
+battery_degradation,168,72
+thermal_anomaly,168,72
+reaction_wheel_degradation,168,72
+battery_voltage_sensor_drift,168,72
+telemetry_dropout,126,55

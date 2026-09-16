@@ -1,0 +1,11 @@
+phase,objective,complete
+1,Nominal spacecraft simulation,True
+2,Controlled fault injection,True
+3,Rule-based fault detection,True
+4,Physics/model-based monitoring,True
+5,Unsupervised machine learning,True
+6,Hybrid evidence fusion,True
+7,Supervised fault diagnosis,True
+8,Explainable AI,True
+9,Independent Monte Carlo robustness,True
+10,Research packaging and audit,True

@@ -1,0 +1,20 @@
+metric,value
+Monte Carlo scenarios,120.0
+Hybrid precision,0.9969934858860864
+Hybrid recall,0.710003568454859
+Hybrid F1,0.8293733500069473
+Raw diagnosis accuracy,0.8527021133182665
+Raw diagnosis Macro F1,0.9003
+Confidence coverage,0.7371238253836089
+Accepted diagnosis accuracy,0.9782690549190468
+Error-capture rate,0.8912516823687753
+Correct-retention rate,0.8456709755417093
+Scenario success rate,1.0
+Mean diagnosis delay min,19.45210499926906
+Median diagnosis delay min,12.54831174360428
+SHAP top-5 probability drop,0.6304716127715179
+Random-5 probability drop,0.014757086897772415
+SHAP beats random fraction,1.0
+XAI pairwise Jaccard,0.6876461988304093
+XAI consensus overlap,0.84
+Phase8-MC explanation overlap,0.7333333333333334

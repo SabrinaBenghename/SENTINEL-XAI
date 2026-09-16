@@ -1,0 +1,7 @@
+fault_type,power_anomaly_rate,battery_anomaly_rate,thermal_anomaly_rate,wheel_anomaly_rate
+solar_array_degradation,0.20416666666666666,0.1625,0.004166666666666667,0.004166666666666667
+battery_degradation,0.09583333333333334,0.1375,0.0,0.004166666666666667
+thermal_anomaly,0.025,0.0125,0.0,0.004166666666666667
+reaction_wheel_degradation,0.025,0.0125,0.0,0.004166666666666667
+battery_voltage_sensor_drift,0.025,0.020833333333333332,0.0,0.004166666666666667
+telemetry_dropout,1.0,1.0,1.0,1.0

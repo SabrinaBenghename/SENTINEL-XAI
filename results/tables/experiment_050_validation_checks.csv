@@ -1,0 +1,7 @@
+check,pass
+Frozen threshold reproduced exactly,True
+Confidence threshold unchanged at 0.70,True
+All six fault classes represented,True
+Accepted diagnosis accuracy,False
+Error-capture rate,False
+Selective diagnosis coverage,True

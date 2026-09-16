@@ -1,0 +1,8 @@
+,nominal,solar_array_degradation,battery_degradation,thermal_anomaly,reaction_wheel_degradation,battery_voltage_sensor_drift,telemetry_dropout
+nominal,88,0,19,2,0,0,0
+solar_array_degradation,0,72,0,0,0,0,0
+battery_degradation,12,0,58,2,0,0,0
+thermal_anomaly,0,0,0,72,0,0,0
+reaction_wheel_degradation,0,0,0,0,72,0,0
+battery_voltage_sensor_drift,0,0,0,0,0,72,0
+telemetry_dropout,0,0,0,0,0,0,55

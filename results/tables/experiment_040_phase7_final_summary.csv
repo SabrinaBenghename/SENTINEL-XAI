@@ -1,0 +1,8 @@
+metric,value
+Phase 6 classification accuracy,0.8072519083969466
+Phase 7 raw classification accuracy,0.933206106870229
+Phase 7 balanced accuracy,0.9446992864424058
+Phase 7 macro F1,0.9419431037233934
+Selective diagnosis coverage,0.6870229007633588
+Accepted diagnosis accuracy,1.0
+Error capture rate,1.0
