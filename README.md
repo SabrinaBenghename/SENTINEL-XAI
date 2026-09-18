@@ -12,12 +12,7 @@ The project combines engineering knowledge, physics-based monitoring, machine le
 
 # 📜 Technical Report
 
-A concise technical report describing the complete project is available at:
-
-```text
-docs/SENTINEL-XAI_Report.pdf
-```
----
+[📄 **Open the SENTINEL-XAI Technical Report**](docs/SENTINEL_XAI_Concise_Report_Package.pdf)
 
 ## Overview
 
